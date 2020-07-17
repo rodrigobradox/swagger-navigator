@@ -3,19 +3,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.com.banese</groupId>
-	<artifactId>swagger-navigator</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>B+ Swagger Navigator</name>
-	<description>Navegador de documentação iterativa swagger</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.1.RELEASE</version>
 		<relativePath/>
 	</parent>
+	
+	<groupId>br.com.banese</groupId>
+	<artifactId>swagger-navigator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>B+ Swagger Navigator</name>
+	<description>Navegador de documentação iterativa swagger</description>	
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
