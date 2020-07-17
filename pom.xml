@@ -3,58 +3,43 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.schulz.bennet</groupId>
-	<artifactId>spring-boot-swagger</artifactId>
+	<groupId>br.com.banese</groupId>
+	<artifactId>swagger-navigator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>spring-boot-swagger</name>
-	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
+	<name>B+ Swagger Navigator</name>
+	<description>Navegador de documentação iterativa swagger</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.3.1.RELEASE</version>
+		<relativePath/>
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<java.version>14</java.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-spring-boot-starter</artifactId>
-			<version>2.20.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-servlet</artifactId>
-            <version>2.20.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-swagger</artifactId>
-            <version>2.20.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-jackson-starter</artifactId>
-            <version>2.20.1</version>
-        </dependency>
+        	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
     </dependencies>
 
 	<build>
@@ -62,11 +47,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>io.takari.maven.plugins</groupId>
-				<artifactId>proto-maven-plugin</artifactId>
-				<version>1.2.1</version>
 			</plugin>
 		</plugins>
 	</build>

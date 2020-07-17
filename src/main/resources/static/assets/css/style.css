@@ -1,0 +1,75 @@
+/* Esconde a barra de rolagem vertical quando existe uma table-responsive */
+@media only screen and (min-width: 768px) {
+	.table-responsive {
+    	overflow-x: hidden;
+	}
+}
+
+/* 
+ *  THEME
+ */
+ 
+.btn-swagger {
+	color: #89bf04;
+	background-color: #FFFFFF;
+	border-color: #89bf04;
+}
+.btn-swagger:hover {
+	color: #FFFFFF;
+	background-color: #89bf04;
+	border-color: #89bf04;
+}
+.btn-swagger:focus {
+	border-color: #89bf04;
+	box-shadow: 0 0 0 0.1rem #89bf04;
+} 
+
+.table {
+	color: #3a3b45;
+	font-size: 13px;
+	background-color: #FFFFFF;
+}
+.table thead th {
+    border-bottom: 1px solid #89bf04!important;
+    border-top: 1px solid #89bf04!important; 
+    vertical-align: baseline;
+}
+.table-striped > tbody > tr:nth-child(odd) > td {
+	color: #3a3b45;
+	background-color: #fff6e6;
+	vertical-align: baseline;
+}
+.table-striped > tbody > tr > td {
+	border: 0px;
+	vertical-align: baseline;
+}
+.table-striped > tbody > tr:hover > td {
+	color: #3a3b45;
+	background-color: #ffdb99;
+	vertical-align: baseline;
+}
+
+.card {
+	border-color: #89bf04!important;
+}
+.card-header {
+	color: #FFFFFF;
+	background-color: #89bf04!important;
+	border-color: #89bf04!important;
+	padding-bottom: .5rem!important;
+	padding-top: .5rem!important;
+	margin-bottom: 0!important;
+	margin-top: 0!important;
+	justify-content: space-between!important;
+	align-items: center!important;
+	display: flex!important;
+}
+.card-body {
+	padding-bottom: .25rem!important;
+	margin-bottom: 0!important;
+	margin-top: 0!important;
+}
+.card-footer {
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
