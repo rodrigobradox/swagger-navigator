@@ -5,7 +5,7 @@
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	
 	<head>
-		<title>B+ Swagger Navigator</title>
+		<title th:text="#{titulo}"></title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
 	<body class="swagger-section">
 		<div class="container">
 			<div class="my-4">	
-				<h1><b>B+ Swagger Navigator</b></h1>
+				<h1><b><span th:text="#{titulo}"></span></b></h1>
 			</div>		
 			<div class="card my-4">
 				<div class="card-header">
