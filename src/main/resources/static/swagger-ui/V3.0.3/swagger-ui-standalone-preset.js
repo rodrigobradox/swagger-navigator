@@ -14706,7 +14706,7 @@ object-assign
                                         (f = this.downloadUrl),
                                             c.push(M.a.createElement("input", { type: "text", onChange: this.onUrlChange, value: this.state.url, disabled: true })),
                                             c.push(M.a.createElement("span", null, " . ")),
-                                            c.push(M.a.createElement("a", { class: "btn btn-success", href: "/swagger-navigator" }, "Voltar" )),
+                                            c.push(M.a.createElement("a", { class: "btn btn-success", href: "/swagger-explorer" }, "Voltar" )),
                                             c.push(M.a.createElement(i, { className: "download-url-button", onClick: this.downloadUrl, hidden: "hidden" }, "Explore"));
                                     return M.a.createElement(
                                         "div",

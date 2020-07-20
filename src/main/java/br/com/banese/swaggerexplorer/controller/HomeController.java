@@ -1,4 +1,4 @@
-package br.com.banese.swaggernavigator.controller;
+package br.com.banese.swaggerexplorer.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	@GetMapping({"/swagger-navigator"})
+	@GetMapping({"/swagger-explorer"})
 	public String home() {
 		return "home";
 	}
