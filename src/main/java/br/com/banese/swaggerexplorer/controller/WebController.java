@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.banese.swaggerexplorer.dto.Api;
 import br.com.banese.swaggerexplorer.services.ApiService;
-import br.com.banese.swaggerexplorer.util.ApiList;
+import br.com.banese.swaggerexplorer.util.ApiPropertiesUtil;
 
 @Controller
 @RequestMapping("swagger-explorer")
@@ -22,9 +22,9 @@ public class WebController {
 	@GetMapping
 	public String home(ModelMap model) {
 		
-		List<Api> devApiList = service.getApiList(ApiList.ENVIRONMENT_DEV);
-		List<Api> hmlApiList = service.getApiList(ApiList.ENVIRONMENT_HML);
-		List<Api> localApiList = service.getApiList(ApiList.ENVIRONMENT_LOCAL);
+		List<Api> devApiList = service.getApiList(ApiPropertiesUtil.ENVIRONMENT_DEV);
+		List<Api> hmlApiList = service.getApiList(ApiPropertiesUtil.ENVIRONMENT_HML);
+		List<Api> localApiList = service.getApiList(ApiPropertiesUtil.ENVIRONMENT_LOCAL);
 		
 		model.addAttribute("devApiList", devApiList);
 		model.addAttribute("hmlApiList", hmlApiList);

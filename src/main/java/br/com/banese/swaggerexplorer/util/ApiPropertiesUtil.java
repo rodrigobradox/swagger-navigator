@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 import br.com.banese.swaggerexplorer.dto.Api;
 
 @Component
-public class ApiList {
+public class ApiPropertiesUtil {
 	
 	public static final String ENVIRONMENT_DEV = "dev";
 	public static final String ENVIRONMENT_HML = "hml";
@@ -27,7 +27,7 @@ public class ApiList {
 	private Properties hml = new Properties();
 	private Properties local = new Properties();
 	
-	private ApiList() {
+	private ApiPropertiesUtil() {
 		try {
 			this.dev.load(getClass().getResourceAsStream(DEV_API_PROPERTY_FILE));
 			this.hml.load(getClass().getResourceAsStream(HML_API_PROPERTY_FILE));
@@ -40,11 +40,11 @@ public class ApiList {
 		}
 	}
 	
-    private static ApiList singleton;
+    private static ApiPropertiesUtil singleton;
     
-    public static synchronized ApiList getInstance() {
+    public static synchronized ApiPropertiesUtil getInstance() {
     	if (singleton == null) {
-    		singleton = new ApiList();
+    		singleton = new ApiPropertiesUtil();
     	}
         return singleton;
     }
