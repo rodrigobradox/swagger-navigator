@@ -73,3 +73,20 @@
 	background-color: #FFFFFF;
 	border-color: #FFFFFF;
 }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}

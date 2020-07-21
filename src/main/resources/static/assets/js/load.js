@@ -1,3 +1,6 @@
+
+//DEPRECATED
+
 var Swagger = function(nome, descricao, json) {
 	this.nome = nome;
 	this.descricao = descricao;
